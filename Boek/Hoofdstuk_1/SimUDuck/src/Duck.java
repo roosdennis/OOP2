@@ -1,8 +1,16 @@
 public abstract class Duck {
     FlyBehavior flyBehavior;
-    QuakeBehavior quackBehavior;
+    QuackBehavior quackBehavior;
 
     public Duck() {
+    }
+
+    public void setFlyBehavior(FlyBehavior fb) {
+        flyBehavior = fb;
+    }
+
+    public void setQuackBehavior(QuackBehavior qb) {
+       quackBehavior = qb;
     }
 
     public abstract void display();
